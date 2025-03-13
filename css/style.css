@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "popins", sans-serif;
+}
+.container-fluid{
+    width: 100%;
+    margin: auto;
+}
+.custom-width{
+    width: 90%;
+    margin: auto;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.row{
+    display: flex;
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{    
+    width: 83.33%;
+}
+.col-11{    
+    width: 91.66%;
+}
+.col-12{    
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* Navigation CSS start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 30px 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+.nav-bg{
+    background-color: #21243D;
+}
+
+nav .search-icon i{
+    color: white;
+    font-size: 20px;
+}
+/* Navigation CSS end */
+
+/* Banner CSS start */
+.banner-inner{
+    background: url('../img/herobanner.png') no-repeat center/cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.banner-inner .banner-content h1{
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.banner-inner .banner-content p{
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 40%;
+    text-align: justify;
+}
+.banner-inner .banner-content a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding: 12px 60px;
+    background-color: #21243D;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Banner CSS end */
+
+
+/* Popular Menu CSS start */
+.popular-menu .popular-menu-bg{
+    background: #21243D;
+    padding: 50px 0;
+    position: relative;
+    z-index: -1;
+}
+
+.popular-menu .dot img {
+    position: absolute;
+    top: -10px;
+    left: 650px;
+    transform: rotate(90deg);
+}
+img.circle-corner {
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    z-index: 1;
+}
+
+img.full-circle{
+    position: absolute;
+    top: 60%;
+    left: -40px;
+
+}
+
+img.wave {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.popular-menu .popular-menu-title{
+    text-align: center;
+    color: white;
+    padding: 50px 0;    
+}
+.popular-menu .popular-menu-title h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.popular-menu .popular-menu-title p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 0px 300px;
+}
+
+.popular-menu .popular-menu-content{
+    text-align: center;
+    color: white;  
+}
+.popular-menu .popular-menu-content img{
+    padding: 20px;
+}
+
+.popular-menu .popular-menu-content h3{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.popular-menu .popular-menu-content p{
+    font-size: 20px;
+    padding: 0px 50px;
+    font-weight: 400;
+}
+
+/* Media Query / Responsive CSS */
+/* template */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .logo img{
+        width: 100px;
+    }
+
+    nav ul li a{
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+
+    header .custom-width{
+        padding: 10px 0px;
+    }
+
+    .banner-inner .banner-content h1 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .banner-inner .banner-content p {
+        font-size: 12px;
+    }
+
+    .banner-inner .banner-content a {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 10px 30px;
+        margin-top: 10px;
+    }
+
+    .popular-menu .popular-menu-title p {
+        font-size: 12px;
+        margin-bottom: 20px;
+        padding: 0px 0px;
+    }
+
+    .popular-menu .popular-menu-title h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .popular-menu .popular-menu-title {
+        padding: 0px 0;
+    }
+
+    img.circle-corner {
+        right: 0px;
+        top: -36px;
+        width: 20%;
+    }
+    img.wave {
+        left: 27px;
+        top: 60px;
+        width: 15%;
+    }
+
+    .popular-menu .popular-menu-content img {
+        width: 100%;
+    }
+
+    .popular-menu .popular-menu-content p {
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+    .popular-menu .popular-menu-content h3 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    img.full-circle {
+        top: 54%;
+        left: -20px;
+        width: 10%;
+    }
+    .popular-menu .dot img {
+        top: -29px;
+        left: 0;
+        width: 10%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .logo img{
+        width: 100px;
+    }
+
+    nav ul li a{
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+
+    header .custom-width{
+        padding: 10px 0px;
+    }
+
+    .banner-inner .banner-content h1 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .banner-inner .banner-content p {
+        font-size: 12px;
+    }
+
+    .banner-inner .banner-content a {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 10px 30px;
+        margin-top: 10px;
+    }
+
+    .popular-menu .popular-menu-title p {
+        font-size: 12px;
+        margin-bottom: 20px;
+        padding: 0px 0px;
+    }
+
+    .popular-menu .popular-menu-title h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .popular-menu .popular-menu-title {
+        padding: 0px 0;
+    }
+
+    img.circle-corner {
+        right: 0px;
+        top: -36px;
+        width: 20%;
+    }
+    img.wave {
+        left: 27px;
+        top: 60px;
+        width: 15%;
+    }
+
+    .popular-menu .popular-menu-content img {
+        width: 100%;
+    }
+
+    .popular-menu .popular-menu-content p {
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+    .popular-menu .popular-menu-content h3 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    img.full-circle {
+        top: 54%;
+        left: -20px;
+        width: 10%;
+    }
+    .popular-menu .dot img {
+        top: -29px;
+        left: 0;
+        width: 10%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .logo img{
+        width: 100px;
+    }
+
+    nav ul li a{
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+
+    header .custom-width{
+        padding: 10px 0px;
+    }
+
+    .banner-inner .banner-content h1 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .banner-inner .banner-content p {
+        font-size: 12px;
+    }
+
+    .banner-inner .banner-content a {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 10px 30px;
+        margin-top: 10px;
+    }
+
+    .popular-menu .popular-menu-title p {
+        font-size: 12px;
+        margin-bottom: 20px;
+        padding: 0px 0px;
+    }
+
+    .popular-menu .popular-menu-title h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .popular-menu .popular-menu-title {
+        padding: 0px 0;
+    }
+
+    img.circle-corner {
+        right: 0px;
+        top: -36px;
+        width: 20%;
+    }
+    img.wave {
+        left: 27px;
+        top: 60px;
+        width: 15%;
+    }
+
+    .popular-menu .popular-menu-content img {
+        width: 100%;
+    }
+
+    .popular-menu .popular-menu-content p {
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+    .popular-menu .popular-menu-content h3 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    img.full-circle {
+        top: 54%;
+        left: -20px;
+        width: 10%;
+    }
+    .popular-menu .dot img {
+        top: -29px;
+        left: 0;
+        width: 10%;
+    }
+}
+
+
